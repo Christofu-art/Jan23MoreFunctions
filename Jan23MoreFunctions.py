@@ -15,10 +15,10 @@ ChangeChecker(25) #call function NOT in a print statement
 
 #function defintion
 def isPrime(num):
-    Prime = true
-for i in range(2, num):
-    print(i, end = " ") #prints 2-num
-    if num%i==0:
-        print ("is not prime")
-return Prime
-result = isPrime(16) #function call
+    Prime = True
+    for i in range(2, num):
+        if num%i==0:
+            Prime = False
+    return Prime
+
+print("is the number prime?", isPrime(7)) #function call
